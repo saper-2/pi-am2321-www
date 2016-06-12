@@ -2,7 +2,7 @@
 
 OUT_INFO=/tmp/am2321-log.txt
 OUT_VAL=/tmp/am2321-val.txt
-AM2321_BIN=/home/pi/am2321/am2321-read
+AM2321_BIN=/home/pi/am2321/am2321/am2321-read
 
 if [ "$EUID" -ne 0 ]; then
 	echo "This need to be run as root (or sudo)"

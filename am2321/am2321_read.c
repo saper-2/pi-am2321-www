@@ -36,7 +36,7 @@ void print_help(void) {
 	fprintf(stderr, "Below is description of line formats: \n");
 	fprintf(stderr, "-raw \n");
 	fprintf(stderr, "     v:[unix_ts:uint];[mode:char];[result:int];[humi:hex(4)];[temp:hex(4)]\n");
-	fprintf(stderr, "     unix_ts - unix time stamp (unsigned int/long)\n");
+	fprintf(stderr, "     unix_ts - unix time stamp (unsigned int/long ; UTC)\n");
 	fprintf(stderr, "     mode - display mode (1 char) - 'r' for Raw\n");
 	fprintf(stderr, "     result - data read result code. 0 for OK, otherwise error (see source code).\n");
 	fprintf(stderr, "     humi - hexodecimal (4char len) value of humidity (humidity resolution is 0.1%%)\n");
