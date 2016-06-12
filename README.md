@@ -20,6 +20,13 @@ Alias /sensor/ "/home/pi/am2321/www/"
 </Directory>
 ```
 
+Add your user to www-data group (e.g.```sudo usermod -a -G www-data pi```)
+chmod www & index.php:
+```
+chmod a+rx /home/pi/am2321/www /home/pi/am2321/www/index.php
+```
+
+
 # Cron
 Add to cron (root user) this task:
 ```
